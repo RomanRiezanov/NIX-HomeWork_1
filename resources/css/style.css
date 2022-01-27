@@ -1,0 +1,17 @@
+.header {
+    height: 150px;
+}
+
+.header__logo {
+    height: 100%;
+}
+
+.header__title {
+    font-size: 60px;
+    font-family: 'Righteous', cursive;
+    color: #ff0000;
+}
+
+.header__title__firstpart {
+    color: #0000ff;
+}
