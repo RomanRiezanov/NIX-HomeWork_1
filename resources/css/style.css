@@ -2,7 +2,7 @@ body {
     margin: 0;
 }
 
-/*__________________HEADRER __________________*/
+/*__________________HEADRER__________________*/
 
 .header {
     height: 150px;
@@ -16,7 +16,7 @@ body {
 }
 
 .header__title {
-    font-size: 100px;
+    font-size: 60px;
     font-family: 'Righteous', cursive;
     color: #ff0000;
     margin: 0 50px;
@@ -32,15 +32,15 @@ body {
     text-align: center;
 }
 
-.header__nav__list__item{
+.header__nav__list__item {
     display: inline-block;
     list-style: none;
     font-family: 'Righteous', cursive;
-    font-size: 36px;
+    font-size: 28px;
     margin: 0 20px;
 }
 
-.header__nav__link{
+.header__nav__link {
     text-decoration: none;
     color: #000000;
     display: block;
@@ -48,7 +48,7 @@ body {
     transition-duration: 400ms;
 }
 
-.header__nav__link:hover{
+.header__nav__link:hover {
     color: #0000ff;
 }
 
@@ -75,7 +75,7 @@ body {
 	transform: scale(1);
 }
 
-/*__________________MAIN __________________*/
+/*__________________MAIN__________________*/
 
 .main__carousel {
     position: relative;
@@ -87,6 +87,10 @@ body {
     position: relative;
     overflow: hidden;
     width: 100%;
+}
+
+.main__carousel__image {
+    opacity: 0.9;
 }
 
 .main__carousel__input:checked + .main__carousel__item {
@@ -158,15 +162,57 @@ body {
     z-index: 10;
 }
 
-#title {
-    width: 100%;
-    position: absolute;
-    padding: 0px;
-    margin: 0px auto;
-    text-align: center;
-    font-size: 27px;
-    color: rgba(255, 255, 255, 1);
-    font-family: 'Open Sans', sans-serif;
-    z-index: 9999;
-    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.33), -1px 0px 2px rgba(255, 255, 255, 0);
+/*Section info */
+
+.section__info__aboutus {
+    margin: 10px;
+}
+
+
+.info__aboutus__title {
+    font-family: 'Righteous', cursive;
+    font-size: 40px;
+}
+
+.info__aboutus__text {
+    font-family: 'Righteous', cursive;
+    font-size: 24px;
+}
+
+.info__aboutus__image {
+    width: 35%;
+    float: right;
+}
+
+.info__aboutus__link {
+    text-decoration: none;
+    color: #0000ff;
+    transition-duration: .4s;
+}
+
+.info__aboutus__link:hover {
+    color: #ff0000;
+}
+
+/*__________________FOOTER__________________*/
+
+.footer {
+    height: 100px;
+    background: linear-gradient(to right, #0099f7, #f11712);
+    line-height: 100px;
+}
+
+.footer__text {
+    color: #ffffff;
+    font-family: 'Righteous', cursive;
+    font-size: 24px;
+    margin-left: 15px;
+}
+
+.footer__link {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 24px;
+    float: right;
+    margin-right: 15px;
 }

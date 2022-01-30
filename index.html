@@ -16,25 +16,25 @@
             <ul class="header__nav__list">
                 <li class="header__nav__list__item"><a href="" class="header__nav__link">Home</a></li>
                 <li class="header__nav__list__item"><a href="" class="header__nav__link">Carousel</a></li>
-                <li class="header__nav__list__item"><a href="" class="header__nav__link">About</a></li>
+                <li class="header__nav__list__item"><a href="" class="header__nav__link">About Us</a></li>
                 <li class="header__nav__list__item"><a href="" class="header__nav__link">Contacts</a></li>
             </ul>
         </nav>
     </header>
     <main class="main">
-        <div class="main__carousel">
+        <section class="main__carousel">
             <div class="main__carousel__inner">
                 <input class="main__carousel__input" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden="" checked="checked">
                 <div class="main__carousel__item">
-                    <img src="resources/media/supplier.jpg" class="main__carousel__image">
+                    <img src="resources/media/supplier.jpg" class="main__carousel__image" alt="supplier">
                 </div>
                 <input class="main__carousel__input" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
                 <div class="main__carousel__item">
-                    <img src="resources/media/electricalwork.jpg" class="main__carousel__image">
+                    <img src="resources/media/electricalwork.jpg" class="main__carousel__image" alt="electical work">
                 </div>
                 <input class="main__carousel__input" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
                 <div class="main__carousel__item">
-                    <img src="resources/media/energyaudit.jpg" class="main__carousel__image">
+                    <img src="resources/media/energyaudit.jpg" class="main__carousel__image" alt="energyaudit">
                 </div>
                 <label for="carousel-3" class="carousel-control prev control-1">‹</label>
                 <label for="carousel-2" class="carousel-control next control-1">›</label>
@@ -43,10 +43,20 @@
                 <label for="carousel-2" class="carousel-control prev control-3">‹</label>
                 <label for="carousel-1" class="carousel-control next control-3">›</label>
             </div>
-        </div>
+        </section>
+        <section class="section__info">
+            <div class="section__info__aboutus"> 
+                <h2 class="info__aboutus__title">About Us</h2>
+                <p class="info__aboutus__text"><img src="resources/media/team.jpg" alt="team" class="info__aboutus__image">Our company is the offender of JSC "Leasing Company" Assistance ", which was one of the first suppliers of electricity in Ukraine at an unregulated rate, began work at the initial stage in October 1997.</p>
+                <p class="info__aboutus__text">Today ENERGO X LLC is a member of the Energy Market of Ukraine and supplies electricity to more than 300 enterprises in the Kharkiv region in the amount of 15 million kWh. For almost 25 years of our work at the Energy Market, we have not stopped supply for a single day.</p>
+                <p class="info__aboutus__text">You can read more by following this link: <a href="https://energox.com.ua/" class="info__aboutus__link" target="_blank">energox.com.ua</a></p>
+            </div>
+            
+        </section>
     </main>
-    <footer>
-
+    <hr>
+    <footer class="footer">
+        <p class="footer__text">&copy;2022 Energo H, Inc.<a href="tel:0503437133" class="footer__link">Tel: (050) 343-71-33</a></p>
     </footer class="footer">
 </body>
 </html>
