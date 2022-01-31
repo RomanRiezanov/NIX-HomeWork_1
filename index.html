@@ -25,24 +25,52 @@
     <main class="main">
         <section class="main__carousel" id="carousel">
             <div class="main__carousel__inner">
-                <input class="main__carousel__input" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden="" checked="checked">
+                <input class="main__carousel__input" type="radio" id="carousel-1" name="carousel" hidden="" checked="checked">
                 <div class="main__carousel__item">
                     <img src="resources/media/supplier.jpg" class="main__carousel__image" alt="supplier">
                 </div>
-                <input class="main__carousel__input" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
+                <input class="main__carousel__input" type="radio" id="carousel-2" name="carousel" hidden="">
                 <div class="main__carousel__item">
                     <img src="resources/media/electricalwork.jpg" class="main__carousel__image" alt="electical work">
                 </div>
-                <input class="main__carousel__input" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
+                <input class="main__carousel__input" type="radio" id="carousel-3" name="carousel" hidden="">
                 <div class="main__carousel__item">
                     <img src="resources/media/energyaudit.jpg" class="main__carousel__image" alt="energyaudit">
                 </div>
-                <label for="carousel-3" class="carousel-control prev control-1">‹</label>
-                <label for="carousel-2" class="carousel-control next control-1">›</label>
-                <label for="carousel-1" class="carousel-control prev control-2">‹</label>
-                <label for="carousel-3" class="carousel-control next control-2">›</label>
-                <label for="carousel-2" class="carousel-control prev control-3">‹</label>
-                <label for="carousel-1" class="carousel-control next control-3">›</label>
+                <label for="carousel-3" class="carousel-control prev control-1">&#x2039;</label>
+                <label for="carousel-2" class="carousel-control next control-1">&#x203A;</label>
+                <label for="carousel-1" class="carousel-control prev control-2">&#x2039;</label>
+                <label for="carousel-3" class="carousel-control next control-2">&#x203A;</label>
+                <label for="carousel-2" class="carousel-control prev control-3">&#x2039;</label>
+                <label for="carousel-1" class="carousel-control next control-3">&#x203A;</label>
+            </div>
+        </section>
+        <section class="main__accordion">
+            <div class="main_accordion__block main_accordion__block__electrecity">
+                <input class="main__accordion__input" type="radio" name="zz" checked/>
+                <a class="main__accordion__link electricity-link" href=""></a>
+                <div class="main_accordion__second-block">
+                    <h2 class="main__accordion__title">Electricity</h2>
+                    <p class="main__accordion__text">Full range of services related to electricity supply.</p>
+                </div>
+            </div>
+              
+            <div class="main_accordion__block main_accordion__block__audit">
+                <input class="main__accordion__input" type="radio" name="zz" />
+                <a class="main__accordion__link energy-audit-link" href=""></a>
+                <div class="main_accordion__second-block">
+                    <h2 class="main__accordion__title">Energy Audit</h2>
+                    <p class="main__accordion__text">Energy audit. Energy certification and thermal imaging inspection of residential and public buildings. Thermal imaging inspection of electrical equipment, substations, refrigeration equipment, air conditioners.</p>
+                </div>
+            </div>
+              
+            <div class="main_accordion__block bb main_accordion__block__work">
+                <input class="main__accordion__input" type="radio" name="zz" />
+                <a class="main__accordion__link installationwork-link" href=""></a>
+                <div class="main_accordion__second-block">
+                    <h2 class="main__accordion__title">Installation Work</h2>
+                    <p class="main__accordion__text">Installation and reconstruction of outdoor lighting and traffic lights. General construction works.</p>
+                </div>
             </div>
         </section>
         <section class="section__info" id="info">
@@ -70,8 +98,8 @@
             </div>
         </section>
     </main>
-    <footer class="footer" id="contacts">
+    <footer class="footer">
         <p class="footer__text">&copy;2022 Energo H, Inc.<a href="tel:0503437133" class="footer__link">Tel: (050) 343-71-33</a></p>
-    </footer class="footer">
+    </footer>
 </body>
 </html>

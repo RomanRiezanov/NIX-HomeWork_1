@@ -193,6 +193,142 @@ body {
     z-index: 10;
 }
 
+/*Section accordion*/
+
+.main__accordion {
+    margin: 50px auto;
+    width: 450px;
+    overflow: hidden;
+    font-family: 'Righteous', cursive;
+    box-shadow: 1px 1px 5px #777;
+}
+  
+.main__accordion__text {  
+    font-size: 20px;
+    margin: 20px 10px 0 5px;
+    width: 250px;  
+}
+  
+.main__accordion__title {
+    font-size: 28px;
+    text-transform: uppercase;
+    text-indent: 5px;
+    white-space: nowrap;
+    margin: 30px 0 0;
+    text-shadow: 0 1px 2px rgba(100,100,100,0.3);
+    width: 200px;
+}
+  
+.main_accordion__block {
+    height: 320px;
+    float: left;
+    overflow: hidden;
+    position: relative;
+    box-shadow: inset 0 1px #fff,
+      inset 0 -1px 3px #444;  
+}
+  
+.main_accordion__second-block {
+    width: 0px;
+    margin-left: 50px;
+    height: 100%;
+    transition: width 0.5s ease-in-out;
+}
+  
+.main__accordion__input, .main__accordion__link {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;    
+}
+  
+.main__accordion__input {
+    opacity: 0;
+    z-index: 10;
+    cursor: pointer;
+    height: 60px;
+    width: 50px;   
+}
+  
+.main__accordion__link:after {
+    position: absolute;
+    color: #ffffff;
+    left: 350%;
+    bottom: 100%;
+    font-family: 'Righteous', cursive;
+    letter-spacing: 2px;
+    line-height: 50px;
+    white-space: nowrap;
+    word-spacing: 4px;
+    background: rgba(40,40,40,0.3);
+    width: 177px;
+    text-indent: 10px; 
+    transform-origin: 0 0;
+    transform: rotate(-45deg) translateY(-15px);
+    transform-origin: 0 0;
+    transform: rotate(-45deg) translateY(-15px);
+}
+
+.electricity-link:after {
+    content: "Electricity";
+}
+
+.energy-audit-link:after {
+    content: "Energy Audit";
+}
+
+.installationwork-link:after{
+    content: "Installation Work";
+}
+
+.main__accordion__link {
+    z-index: 9;
+    left: -25px;
+    width: 30px; 
+    height: 30px;
+    bottom: 9px;
+    color: transparent;
+    border: solid 8px;
+    border-color: transparent white white transparent;
+    transform-origin: 50% 50%;
+    transform: rotate(-45deg);
+    transform-origin: 50% 50%;
+    transform: rotate(-45deg);
+    background: rgba(50,50,50,0.4);
+  }
+  
+.main__accordion__input:hover+.main__accordion__link {
+    background: rgba(255,255,255,0.5);
+}
+  
+.main__accordion__input:hover+.main__accordion__link:after,
+.main__accordion__inputt:checked+.main__accordion__link:after {
+    color: rgba(255,255,255,0.7);
+}
+  
+.main__accordion__input:checked ~ .main_accordion__second-block {
+    width: 300px;
+}
+  
+.main_accordion__block__electrecity {
+    background-color: #2a2a72;
+    background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
+    color: white;
+}
+  
+  .main_accordion__block__audit {
+    background-color: #eec0c6;
+    background-image: linear-gradient(315deg, #eec0c6 0%, #7ee8fa 74%);
+
+    color: white;
+} 
+  
+  .main_accordion__block__work {
+    background-color: #f6fba2;
+    background-image: linear-gradient(315deg, #f6fba2 0%, #20ded3 74%);
+    color: #808;
+}
+
 /*Section info */
 
 .section__info {
